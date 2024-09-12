@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Header com Nome da Loja e Menu -->
+    <header>
+        <div class="header-content">
+            <h1>EBAC Shoes</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#" id="link-sobre">Sobre a Loja</a></li>
+                    <li><a href="#" id="link-formulario">Adquira o Seu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Sobre a Loja -->
+    <section class="about" id="sobre">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="./img/loja.webp" alt="Imagem da Loja">
+            </div>
+            <div class="about-text">
+                <h2>Sobre a EBAC Shoes</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ut, quis nulla odit, mollitia consequatur suscipit minus assumenda magnam illo sunt magni temporibus accusamus molestiae modi adipisci eius voluptates enim! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam autem quam consequuntur deleniti. Unde ducimus maxime minus sint esse dolorem velit odio perspiciatis possimus, dolorum corporis ad debitis cupiditate laborum.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section class="products">
+        <h2>Nossos Produtos</h2>
+        <div class="product-list">
+            <!-- Produto 1 -->
+            <div class="product" data-produto="produto1">
+                <img src="./img/tenis1.jpg" alt="Produto 1">
+                <h3>Vans old skool black</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 2 -->
+            <div class="product" data-produto="produto2">
+                <img src="./img/tenis2.jpg" alt="Produto 2">
+                <h3>Vans old skool blue</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 3 -->
+            <div class="product" data-produto="produto3">
+                <img src="./img/tenis3.jpg" alt="Produto 3">
+                <h3>Vans old skool white</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 4 -->
+            <div class="product" data-produto="produto4">
+                <img src="./img/tenis4.jpg" alt="Produto 4">
+                <h3>Vans old skool dark</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Compra -->
+    <section class="purchase-form" id="formulario">
+        <h2>Adquira o Seu Produto</h2>
+        <form id="compraForm">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+
+            <label for="produto">Produto:</label>
+            <select id="produto" name="produto">
+                <option value="produto1">Vans old skool black</option>
+                <option value="produto2">Vans old skool blue</option>
+                <option value="produto3">Vans old skool white</option>
+                <option value="produto4">Vans old skool dark</option>
+            </select>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+
+            <button type="submit">Finalizar Compra</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://wa.me/" target="_blank">WhatsApp</a>
+        </div>
+        <p>&copy; 2024 EBAC Shoes. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

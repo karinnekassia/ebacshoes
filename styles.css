@@ -1,0 +1,234 @@
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* Estilo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f0f8ff; /* Azul claro de fundo */
+}
+
+/* Header */
+header {
+    background-color: #005f9e; /* Azul escuro */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+h2 {
+    color: #005f9e;
+    border-bottom: 2px solid #005f9eb2;
+    padding: 10px;
+    /* padding-bottom: 10px; */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Sobre a Loja */
+.about {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.about-text {
+    flex: 1;
+    /* text-align: left;
+    margin: 0 auto; */
+}
+
+.about-text p {
+    padding-top: 30px;
+}
+
+/* Seção de Produtos */
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: #e7f3ff; /* Azul claro para produtos */
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px); /* 4 colunas para desktop */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+}
+
+.product button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0.5em;
+}
+
+.product button:hover {
+    background-color: #005f6b;
+}
+
+/* Formulário de Compra */
+.purchase-form {
+    background-color: #eef5ff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.purchase-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.purchase-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.purchase-form label {
+    margin-bottom: 10px;
+}
+
+.purchase-form input,
+.purchase-form select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.purchase-form button {
+    background-color: #005f9e;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.purchase-form button:hover {
+    background-color: #00426b;
+}
+
+/* Rodapé */
+footer {
+    background-color: #005f9e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: rgba(255, 0, 0, 0.829);
+    font-size: 14px;
+}
+
+/* Responsividade para Tablet (até 1024px) */
+@media (max-width: 1024px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 colunas para tablets */
+        gap: 20px;
+    }
+}
+
+/* Responsividade para Celulares (até 768px) */
+@media (max-width: 640px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        order: -1; /* Coloca a imagem acima do texto */
+    }
+
+    .product-list {
+        grid-template-columns: 1fr; /* 1 coluna para celulares */
+        gap: 15px;
+    }
+}
